@@ -1,0 +1,135 @@
+.comparison {
+  background-color: var(--bg-primary);
+  position: relative;
+  z-index: 2;
+  padding-bottom: 10rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 24px;
+  padding: 1px; /* space for gradient border */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 23px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table th {
+  background: rgba(10, 10, 12, 0.8);
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+.product-col {
+  width: 35%;
+}
+
+.spec-name {
+  width: 30%;
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.product-header h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+}
+
+.price {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.btn-sm {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.pro-col {
+  background: rgba(242, 29, 65, 0.05);
+  position: relative;
+}
+
+.pro-col::before {
+  content: 'Best Seller';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--accent-gradient);
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pro-cell {
+  background: rgba(242, 29, 65, 0.03);
+}
+
+.comparison-table tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.comparison-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.check-icon {
+  font-size: 1.5rem;
+  color: #4CAF50;
+}
+
+.pro-check {
+  color: var(--accent-secondary);
+}
+
+.highlight-spec {
+  color: var(--accent-secondary);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .product-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .spec-name {
+    font-size: 0.9rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 1rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}

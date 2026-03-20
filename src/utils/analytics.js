@@ -1,15 +1,21 @@
 /**
- * Analytics events for GA4 via Google Tag Manager dataLayer.
- * Configure GA4 Event tags in GTM to fire on these event names.
+ * Analytics events for GA4.
+ * Sends to dataLayer (for GTM) and directly to GA4 via gtag when available.
  */
 
 export const trackEvent = (eventName, eventParams = {}) => {
-  if (typeof window !== 'undefined') {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: eventName,
-      ...eventParams,
-    });
+  if (typeof window === 'undefined') return;
+
+  // Push to dataLayer for GTM
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: eventName,
+    ...eventParams,
+  });
+
+  // Send directly to GA4 (bypasses GTM - ensures events reach GA4)
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, eventParams);
   }
 };
 

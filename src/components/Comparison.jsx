@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { FiCheck } from 'react-icons/fi';
+import { trackBuyNowClick } from '../utils/analytics';
 import './Comparison.css';
 
 const specs = [
@@ -50,14 +51,14 @@ const Comparison = () => {
                    <div className="product-header">
                      <h3>MoGo 4</h3>
                      <span className="price">$499</span>
-                     <button className="btn btn-outline btn-sm">Buy Now</button>
+                     <a href="https://eu.xgimi.com/products/mogo-4" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm" onClick={() => trackBuyNowClick('comparison_mogo4')}>Buy Now</a>
                    </div>
                 </th>
                 <th className="product-col pro-col">
                    <div className="product-header">
                      <h3>MoGo 4 Pro</h3>
                      <span className="price">$599</span>
-                     <button className="btn btn-accent btn-sm">Buy Now</button>
+                     <a href="https://eu.xgimi.com/products/mogo-4-pro" target="_blank" rel="noopener noreferrer" className="btn btn-accent btn-sm" onClick={() => trackBuyNowClick('comparison_mogo4_pro')}>Buy Now</a>
                    </div>
                 </th>
               </tr>

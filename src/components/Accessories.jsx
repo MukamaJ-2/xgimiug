@@ -33,7 +33,7 @@ const Accessories = () => {
         <div className="accessories-content">
           <div className="accessory-showcase fade-up delay-1">
             <div className="image-wrapper glass">
-              <img src="/assets/projector_accessories_setup_1772827682339.png" alt="MoGo 4 full ecosystem setup" />
+              <img src="/assets/7.jpg" alt="MoGo 4 with carrying case - complete ecosystem packed and ready to go" />
               <div className="overlay-text">
                 <h3>The Complete Ecosystem</h3>
                 <p>From the minimalist tripod stand to the sleek portable screen and carrying case, every detail is considered.</p>
@@ -45,7 +45,7 @@ const Accessories = () => {
             <div className="glass details-card">
               <h3 className="h3">In The Box</h3>
               <p className="details-desc">Minimalist design meets maximum functionality. Your MoGo comes with essential premium accessories.</p>
-              
+
               <ul className="box-items">
                 <li>
                   <div className="item-details">
@@ -67,15 +67,21 @@ const Accessories = () => {
                 </li>
                 <li>
                   <div className="item-details">
+                    <span className="item-name">Sunset Filter</span>
+                    <span className="item-desc">Magnetic creative filter included in the box.</span>
+                  </div>
+                </li>
+                <li>
+                  <div className="item-details">
                     <span className="item-name">Quick Start Guide</span>
                     <span className="item-desc">Get set up in minutes.</span>
                   </div>
                 </li>
               </ul>
             </div>
-            
+
             <div className="image-wrapper small-image glass">
-              <img src="/assets/projector_accessories_1772826398152.png" alt="MoGo 4 Accessories" />
+              <img src="https://m.media-amazon.com/images/I/51PHFlqAYhL._AC_UF1000,1000_QL80_.jpg" alt="MoGo 4 - what's in the box" />
             </div>
           </div>
         </div>

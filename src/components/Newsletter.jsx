@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { trackNewsletterSignup } from '../utils/analytics';
 import './Newsletter.css';
 
 const Newsletter = () => {
@@ -29,6 +30,7 @@ const Newsletter = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
+      trackNewsletterSignup();
       setSubscribed(true);
       setEmail('');
       setTimeout(() => setSubscribed(false), 5000);

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { trackBuyNowClick } from '../utils/analytics';
 import './Products.css';
 
 const Products = () => {
@@ -34,7 +35,7 @@ const Products = () => {
           {/* MoGo 4 */}
           <div className="product-card fade-up delay-1 glass">
             <div className="product-image">
-              <img src="/assets/projector_orange_accent_lifestyle_1772827669194.png" alt="XGIMI MoGo 4" />
+              <img src="/assets/xgimi-mogo-4-20250612-09.jpg" alt="XGIMI MoGo 4" />
             </div>
             <div className="product-info">
               <h3>MoGo 4</h3>
@@ -47,7 +48,7 @@ const Products = () => {
               </ul>
               <div className="product-action">
                 <span className="price">$499</span>
-                <button className="btn btn-outline">Buy Now</button>
+                <a href="https://eu.xgimi.com/products/mogo-4" target="_blank" rel="noopener noreferrer" className="btn btn-outline" onClick={() => trackBuyNowClick('products_mogo4')}>Buy Now</a>
               </div>
             </div>
           </div>
@@ -56,7 +57,7 @@ const Products = () => {
           <div className="product-card fade-up delay-2 pro-card glass">
             <div className="pro-badge">Pro Excellence</div>
             <div className="product-image">
-              <img src="/assets/projector_closeup_orange_1772827740620.png" alt="XGIMI MoGo 4 Pro" />
+              <img src="/assets/mogo4_movies_streaming.jpg" alt="XGIMI MoGo 4 Pro" />
             </div>
             <div className="product-info">
               <h3>MoGo 4 Pro</h3>
@@ -69,7 +70,7 @@ const Products = () => {
               </ul>
               <div className="product-action">
                 <span className="price">$599</span>
-                <button className="btn btn-accent">Buy Now</button>
+                <a href="https://eu.xgimi.com/products/mogo-4-pro" target="_blank" rel="noopener noreferrer" className="btn btn-accent" onClick={() => trackBuyNowClick('products_mogo4_pro')}>Buy Now</a>
               </div>
             </div>
           </div>

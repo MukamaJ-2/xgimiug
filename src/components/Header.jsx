@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FiMenu, FiX, FiShoppingCart } from 'react-icons/fi';
+import { trackBuyNowClick } from '../utils/analytics';
 import './Header.css';
 
 const Header = ({ scrolled }) => {
@@ -24,7 +25,7 @@ const Header = ({ scrolled }) => {
           <button className="cart-btn" aria-label="Shopping Cart">
             <FiShoppingCart size={20} />
           </button>
-          <a href="https://eu.xgimi.com/products/mogo-4" target="_blank" rel="noopener noreferrer" className="btn btn-accent buy-btn">Buy Now</a>
+          <a href="https://eu.xgimi.com/products/mogo-4" target="_blank" rel="noopener noreferrer" className="btn btn-accent buy-btn" onClick={() => trackBuyNowClick('header')}>Buy Now</a>
           <button 
             className="mobile-menu-btn" 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

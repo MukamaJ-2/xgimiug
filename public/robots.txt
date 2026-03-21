@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mogo4-landing.netlify.app/sitemap.xml
+Sitemap: https://xgimiug.netlify.app/sitemap.xml

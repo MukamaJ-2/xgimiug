@@ -63,7 +63,7 @@ const HeroSection = () => {
 
           <div className="hero-actions delay-3">
             <a href="https://eu.xgimi.com/products/mogo-4" target="_blank" rel="noopener noreferrer" className="btn btn-accent btn-large" onClick={() => trackBuyNowClick('hero')}>Buy Now - $499</a>
-            <button className="btn btn-outline btn-large" onClick={() => trackWatchVideoClick()}>Watch Video</button>
+            <a href="https://www.youtube.com/shorts/jvh1g2orBhs" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-large" onClick={() => trackWatchVideoClick()}>Watch Video</a>
           </div>
 
           <div className="visitor-rating delay-3">

@@ -1,0 +1,94 @@
+<!--
+  MoGo 4 landing page — user flow diagrams (Mermaid)
+
+  Copy ONE diagram at a time: everything inside a single ```mermaid … ``` fence
+  (including the opening ```mermaid and closing ``` lines), OR copy only the
+  lines between those fences (the flowchart … code) depending on the tool.
+
+  WHERE TO PASTE
+  • mermaid.live — Editor: paste the flowchart code only (no ```mermaid fence).
+  • GitHub / GitLab — Put the same code in a Markdown file inside ```mermaid … ```.
+  • Notion — /code → Mermaid, or a Mermaid block; paste flowchart code only.
+  • Obsidian — Mermaid code block; paste flowchart code only.
+  • Confluence — Mermaid macro / draw.io import; paste per product docs.
+  • Slack — Limited; use mermaid.live → Export PNG/SVG → attach.
+  • Google Slides / PowerPoint — mermaid.live → Actions → PNG/SVG → insert image.
+  • Figma — Paste PNG/SVG export from mermaid.live onto canvas (Figma has no native Mermaid).
+-->
+
+## 1. Primary user flow (decision tree)
+
+```mermaid
+flowchart TB
+  subgraph entry["Landing"]
+    A[Landing / Hero]
+  end
+
+  A --> B[Buy Now]
+  A --> C[Watch Video]
+  A --> D[Scroll to explore]
+
+  D --> E[Features]
+  E --> F[Accessories — In the Box]
+  F --> G[Products — MoGo 4 vs Pro]
+  G --> H[Platform rating]
+  H --> I[Newsletter]
+
+  G --> B2[Buy Now — product card]
+  B --> J[(XGIMI store — external)]
+  B2 --> J
+
+  I --> K[Subscribe success]
+```
+
+## 2. Linear scroll journey (same page)
+
+```mermaid
+flowchart LR
+  H[Header sticky] --- O[Overview Hero]
+  O --- FE[Features]
+  FE --- AC[Accessories]
+  AC --- PR[Products]
+  PR --- RA[Platform rating]
+  RA --- NW[Newsletter]
+  NW --- FT[Footer]
+```
+
+## 3. Conversion funnel (simplified)
+
+```mermaid
+flowchart TD
+  V[Visitors] --> E[Engaged scroll 25%+]
+  E --> P[Reached Products]
+  P --> C{Conversion}
+  C -->|Buy| X[External checkout]
+  C -->|Lead| N[Newsletter signup]
+```
+
+## 4. Swimlane (user / page / external)
+
+```mermaid
+flowchart TB
+  subgraph user["User"]
+    U1[Arrives]
+    U2[Scrolls / clicks nav]
+    U3[Clicks Buy or Subscribe]
+  end
+
+  subgraph page["Landing page"]
+    P1[Hero + sections]
+    P2[Anchor scroll]
+    P3[Forms + links]
+  end
+
+  subgraph external["External"]
+    E1[XGIMI eu.xgimi.com]
+    E2[Mailchimp / email]
+  end
+
+  U1 --> P1
+  U2 --> P2
+  U3 --> P3
+  P3 --> E1
+  P3 --> E2
+```

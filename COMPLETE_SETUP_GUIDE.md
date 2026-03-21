@@ -48,7 +48,7 @@ This guide walks you through setting up SEO, analytics, and Search Console from 
 ### 2d. Create Data Stream
 
 1. **Platform:** Click **Web**
-2. **Website URL:** e.g. `https://mogo4-landing.netlify.app`
+2. **Website URL:** e.g. `https://xgimiug.netlify.app`
 3. **Stream name:** e.g. "xgimi portable projector" (or your preference)
 4. Click **Create stream**
 5. **IMPORTANT:** Copy and save your **Measurement ID** (format: `G-XXXXXXXXXX`)
@@ -87,7 +87,7 @@ This guide walks you through setting up SEO, analytics, and Search Console from 
 ### 5a. Choose Property Type
 
 1. Select **URL prefix** (not Domain)
-2. Enter your full site URL: `https://mogo4-landing.netlify.app`
+2. Enter your full site URL: `https://xgimiug.netlify.app`
 3. Click **Continue**
 
 ### 5b. Verify Ownership
@@ -121,7 +121,7 @@ Choose **HTML tag** method:
 
 1. After verification, you’ll see your property dashboard
 2. In the left sidebar, click **Sitemaps**
-3. Under "Add a new sitemap", you’ll see a prefix like `https://mogo4-landing.netlify.app/`
+3. Under "Add a new sitemap", you’ll see a prefix like `https://xgimiug.netlify.app/`
 4. In the text box, enter: **sitemap.xml** (not the full URL)
 5. Click **Submit**
 6. Status may show "Succeeded" or "Couldn't fetch" initially—"Succeeded" means it’s accepted

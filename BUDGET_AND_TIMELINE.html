@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Allocation & Implementation Timeline — XGIMI MoGo 4</title>
+  <style>
+    @media print {
+      body { margin: 0; padding: 20px; }
+      .page-break { page-break-before: always; }
+      a { color: #333; text-decoration: none; }
+      .no-print { display: none !important; }
+    }
+    * { box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 0 auto; padding: 40px; color: #222; line-height: 1.6; }
+    h1 { font-size: 1.8em; color: #0a0a0c; border-bottom: 2px solid #6366f1; padding-bottom: 10px; margin-top: 0; }
+    h2 { font-size: 1.4em; color: #333; margin-top: 2em; }
+    h3 { font-size: 1.15em; color: #444; margin-top: 1.5em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.9em; }
+    th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; }
+    th { background: #f5f5f5; font-weight: 600; }
+    tr:nth-child(even) { background: #fafafa; }
+    .toc { background: #f8f8f8; padding: 20px; border-radius: 8px; margin: 2em 0; }
+    .toc ul { list-style: none; padding: 0; }
+    .toc li { padding: 6px 0; border-bottom: 1px solid #eee; }
+    .toc li:last-child { border: none; }
+    .footer { margin-top: 3em; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.85em; color: #666; }
+    .print-btn { position: fixed; top: 20px; right: 20px; background: #6366f1; color: white; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-size: 14px; box-shadow: 0 2px 8px rgba(99,102,241,0.4); }
+    .print-btn:hover { background: #4f46e5; }
+    ul { padding-left: 1.5em; }
+    .gantt { font-family: monospace; font-size: 0.85em; }
+    .cover-page { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px 20px; }
+    .cover-logo { font-size: 1.2em; font-weight: bold; color: #333; margin-bottom: 4px; }
+    .cover-slogan { font-size: 0.75em; color: #666; margin-bottom: 2em; }
+    .cover-title { font-size: 1.5em; font-weight: 600; margin: 1em 0 0.5em; color: #0a0a0c; }
+    .cover-subtitle { font-size: 1em; color: #555; margin-bottom: 2em; }
+    .cover-table { max-width: 500px; margin: 2em auto; }
+    .cover-date { margin-top: 2em; font-size: 0.95em; }
+    .ucu-logo { max-width: 700px; height: auto; margin-bottom: 1em; }
+    .doc-header { display: flex; align-items: center; gap: 20px; margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd; }
+    .doc-header img { max-height: 70px; width: auto; }
+  </style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">📄 Save as PDF</button>
+
+<!-- COVER PAGE -->
+<div class="cover-page">
+  <img src="ucu-logo.png" alt="Uganda Christian University" class="ucu-logo" />
+  <!-- <div class="cover-logo">Uganda Christian University</div> -->
+  <!-- <div class="cover-slogan">A Centre of Excellence in the Heart of Africa</div> -->
+  
+  <div class="cover-title">Budget Allocation & Implementation Timeline</div>
+  <div class="cover-subtitle">XGIMI MoGo 4 Landing Page — Venture Portfolio</div>
+  
+  <p><strong>Program:</strong> BSCS 3:2</p>
+  <p><strong>Course:</strong> Digital Marketing and ICT Entrepreneurship</p>
+  <p><strong>Group:</strong> Group 5</p>
+  
+  <table class="cover-table">
+    <tr><th>S/N</th><th>Reg Number</th><th>Access Number</th><th>Name</th></tr>
+    <tr><td>1.</td><td>M23B23/025</td><td>B20722</td><td>Mucunguzi Godfrey</td></tr>
+    <tr><td>2.</td><td>S23B23/007</td><td>B24243</td><td>Ariko Ethan</td></tr>
+    <tr><td>3.</td><td>S23B23/027</td><td>B24258</td><td>Kiisa Angela</td></tr>
+    <tr><td>4.</td><td>S23B23/036</td><td>B24267</td><td>Joseph Mukama</td></tr>
+    <tr><td>5.</td><td>S23B23/086</td><td>B24775</td><td>Opifudrira Timothy</td></tr>
+  </table>
+  
+  <div class="cover-date">
+    <p><strong>Project Period:</strong> 10th January 2026 — 18th March 2026</p>
+    <p><strong>Date Submitted:</strong> 23rd March 2026</p>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- <div class="doc-header">
+  <img src="ucu-logo.png" alt="UCU" />
+  <div>
+    <strong>Uganda Christian University</strong> — A Centre of Excellence in the Heart of Africa<br>
+    <span style="font-size: 0.9em; color: #666;">Digital Marketing & ICT Entrepreneurship | Group 5</span>
+  </div>
+</div>-->
+
+<h1>Budget Allocation & Implementation Timeline</h1>
+<p><strong>Project:</strong> XGIMI MoGo 4 Landing Page — Venture Portfolio</p>
+<p><strong>Group:</strong> Group 5</p>
+<p><strong>Project Period:</strong> 10th January 2026 — 18th March 2026</p>
+
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><strong>Part 1:</strong> Budget Allocation (Sections 1.1–1.6)</li>
+    <li><strong>Part 2:</strong> Implementation Timeline (Sections 2.1–2.9)</li>
+    <li><strong>Appendix A:</strong> Budget Tracking Template</li>
+    <li><strong>Appendix B:</strong> Tool Reference</li>
+  </ul>
+</div>
+
+<div class="page-break"></div>
+
+<h2>PART 1: BUDGET ALLOCATION</h2>
+
+<h3>1.1 Executive Summary</h3>
+<p>This document outlines the budget allocation and implementation timeline for the XGIMI MoGo 4 digital marketing strategy. The approach prioritises <strong>cost-effectiveness</strong> and <strong>free/low-cost tools</strong> to validate the venture while maintaining professional execution. The project period runs from <strong>10th January 2026 to 18th March 2026</strong>. The total project budget is designed to be <strong>0–190,000 UGX</strong> (Uganda Shillings) over the 10-week period, with all tools either free or minimally priced. <em>Exchange reference: ~3,800 UGX per 1 USD</em>.</p>
+
+<h3>1.2 Budget Philosophy & Principles</h3>
+<table>
+  <tr><th>Principle</th><th>Description</th></tr>
+  <tr><td><strong>Lean-First</strong></td><td>Maximise free tier tools before allocating paid budget</td></tr>
+  <tr><td><strong>Validation-Driven</strong></td><td>Spend only after validating channel performance</td></tr>
+  <tr><td><strong>Scalable</strong></td><td>Budget structure allows incremental increases as ROI proves</td></tr>
+  <tr><td><strong>Transparent</strong></td><td>All costs documented with clear allocation rationale</td></tr>
+</table>
+
+<h3>1.3 Detailed Budget Breakdown</h3>
+
+<h4>1.3.1 Project-Period Costs (10 Jan — 18 Mar 2026)</h4>
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Tool/Resource</th>
+    <th>Cost (UGX)</th>
+    <th>%</th>
+    <th>Justification</th>
+  </tr>
+  <tr>
+    <td>Hosting</td>
+    <td>Netlify Free Tier</td>
+    <td>0</td>
+    <td>0%</td>
+    <td>100GB bandwidth, SSL, auto builds. Sufficient for landing page.</td>
+  </tr>
+  <tr>
+    <td>Analytics</td>
+    <td>Google Analytics 4</td>
+    <td>0</td>
+    <td>0%</td>
+    <td>Unlimited hits, events. Industry standard.</td>
+  </tr>
+  <tr>
+    <td>SEO</td>
+    <td>Google Search Console</td>
+    <td>0</td>
+    <td>0%</td>
+    <td>Free indexing, search performance. Essential for SEO.</td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>Mailchimp Free Tier</td>
+    <td>0</td>
+    <td>0%</td>
+    <td>Up to 500 contacts, 1,000 emails/month.</td>
+  </tr>
+  <tr>
+    <td>Design</td>
+    <td>Canva Free</td>
+    <td>0</td>
+    <td>0%</td>
+    <td>Templates for social, email, ads. No watermark.</td>
+  </tr>
+  <tr>
+    <td>Domain (Optional)</td>
+    <td>Namecheap/Cloudflare</td>
+    <td>15,000</td>
+    <td>8%</td>
+    <td>Pro-rated for ~3 months. Brand credibility.</td>
+  </tr>
+  <tr>
+    <td>Paid Ads (Optional)</td>
+    <td>Google / Meta Ads</td>
+    <td>95,000</td>
+    <td>50%</td>
+    <td>Test budget over project period. Validates paid channel.</td>
+  </tr>
+  <tr>
+    <td>Contingency</td>
+    <td>—</td>
+    <td>80,000</td>
+    <td>42%</td>
+    <td>Buffer for premium tools, A/B testing, unforeseen costs.</td>
+  </tr>
+  <tr><th colspan="2">TOTAL PROJECT BUDGET</th><th>190,000 UGX</th><th>100%</th><td></td></tr>
+</table>
+
+<h4>1.3.2 Zero-Budget Scenario (Fully Free)</h4>
+<p>If no budget is allocated, the following fully free stack applies:</p>
+<table>
+  <tr><th>Category</th><th>Tool</th><th>Cost (UGX)</th><th>Capability</th></tr>
+  <tr><td>Hosting</td><td>Netlify Free</td><td>0</td><td>Full hosting, SSL, CDN</td></tr>
+  <tr><td>Analytics</td><td>GA4</td><td>0</td><td>Full analytics suite</td></tr>
+  <tr><td>SEO</td><td>Search Console</td><td>0</td><td>Indexing, queries, performance</td></tr>
+  <tr><td>Email</td><td>Mailchimp Free</td><td>0</td><td>500 contacts, 1,000 emails</td></tr>
+  <tr><td>Social</td><td>Organic only</td><td>0</td><td>Owned channels</td></tr>
+  <tr><td>Design</td><td>Canva Free</td><td>0</td><td>Graphics, templates</td></tr>
+  <tr><th colspan="2">TOTAL</th><th>0 UGX</th><td>100% free stack</td></tr>
+</table>
+
+<h3>1.4 Budget Allocation by Channel</h3>
+<table>
+  <tr><th>Channel</th><th>Project Budget (UGX)</th><th>% of Total</th><th>Primary Use</th></tr>
+  <tr><td>Website & Hosting</td><td>0</td><td>0%</td><td>Netlify free tier</td></tr>
+  <tr><td>SEO (Organic)</td><td>0</td><td>0%</td><td>Search Console, on-page</td></tr>
+  <tr><td>Email</td><td>0</td><td>0%</td><td>Mailchimp free</td></tr>
+  <tr><td>Social (Organic)</td><td>0</td><td>0%</td><td>Content time only</td></tr>
+  <tr><td>Paid Search/Social</td><td>95,000</td><td>50%</td><td>Google/Meta Ads test</td></tr>
+  <tr><td>Domain & Misc</td><td>95,000</td><td>50%</td><td>Domain, contingency</td></tr>
+  <tr><th>TOTAL</th><th>190,000 UGX</th><th>100%</th><td></td></tr>
+</table>
+
+<h3>1.5 Budget Tracking & Review</h3>
+<table>
+  <tr><th>Activity</th><th>Frequency</th><th>Owner</th><th>Output</th></tr>
+  <tr><td>Expense logging</td><td>Weekly</td><td>Group lead</td><td>Actual vs. budgeted spend</td></tr>
+  <tr><td>Channel performance review</td><td>Bi-weekly</td><td>Group lead</td><td>ROI by channel</td></tr>
+  <tr><td>Budget reallocation</td><td>As needed</td><td>Group lead</td><td>Shift to best channels</td></tr>
+</table>
+
+<h3>1.6 Cost-Benefit Justification</h3>
+<table>
+  <tr><th>Spend (UGX)</th><th>Expected Outcome</th><th>Success Metric</th></tr>
+  <tr><td>0 (Hosting)</td><td>Live, fast site</td><td>Uptime >99%, load <3s</td></tr>
+  <tr><td>0 (Analytics)</td><td>Data-driven decisions</td><td>Events tracked, funnel visible</td></tr>
+  <tr><td>0 (Email)</td><td>List growth, nurture</td><td>Open rate >20%, list growth</td></tr>
+  <tr><td>95,000 (Paid ads)</td><td>Validated traffic</td><td>CPA < 19,000 UGX, CTR >2%</td></tr>
+  <tr><td>15,000 (Domain)</td><td>Brand trust, SEO</td><td>Custom URL, improved crawl</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>PART 2: IMPLEMENTATION TIMELINE</h2>
+
+<h3>2.1 Overview</h3>
+<p>The implementation spans <strong>10 weeks</strong> from <strong>10th January 2026 to 18th March 2026</strong>, divided into <strong>5 phases</strong>. Each phase runs approximately 2 weeks and has distinct goals, deliverables, and success criteria. The approach is <strong>agile</strong>—milestones can adjust based on validation.</p>
+
+<h3>2.2 Timeline Summary (10 Jan — 18 Mar 2026)</h3>
+<table class="gantt">
+  <tr><th>Phase</th><th>Jan 10–24</th><th>Jan 25 – Feb 7</th><th>Feb 8–21</th><th>Feb 22 – Mar 7</th><th>Mar 8–18</th></tr>
+  <tr><td>Phase 1: Foundation</td><td>████████</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>Phase 2: Brand Presence</td><td></td><td>████████</td><td></td><td></td><td></td></tr>
+  <tr><td>Phase 3: Content & SEO</td><td></td><td></td><td>████████</td><td></td><td></td></tr>
+  <tr><td>Phase 4: Growth & Email</td><td></td><td></td><td></td><td>████████</td><td></td></tr>
+  <tr><td>Phase 5: Optimisation & Wrap-up</td><td></td><td></td><td></td><td></td><td>████████</td></tr>
+</table>
+
+<h3>2.3 Phase 1: Foundation (10 Jan — 24 Jan 2026)</h3>
+<p><strong>Goal:</strong> Establish technical and measurement foundations.</p>
+<table>
+  <tr><th>Week</th><th>Tasks</th><th>Tools</th><th>Deliverables</th></tr>
+  <tr><td>1</td><td>Deploy site, GA4, Search Console, verify domain</td><td>Netlify, GA4, GSC</td><td>Live URL, tracking active, verified</td></tr>
+  <tr><td>2</td><td>Configure GA4 events, submit sitemap, SEO audit, mobile check</td><td>GA4, GSC</td><td>Events, sitemap, on-page SEO done</td></tr>
+</table>
+<p><strong>Success Criteria:</strong> Live site, GA4 tracking, GSC verified, baseline metrics documented.</p>
+
+<h3>2.4 Phase 2: Brand Presence (25 Jan — 7 Feb 2026)</h3>
+<p><strong>Goal:</strong> Establish consistent brand identity and social presence.</p>
+<table>
+  <tr><th>Week</th><th>Tasks</th><th>Tools</th><th>Deliverables</th></tr>
+  <tr><td>3</td><td>Brand style guide, logo suite, color palette, favicon</td><td>Canva, Favicon.io</td><td>Style guide, logo, favicon</td></tr>
+  <tr><td>4</td><td>Social accounts, content templates, first posts, email signup</td><td>Canva, Mailchimp</td><td>Accounts live, form functional</td></tr>
+</table>
+<p><strong>Success Criteria:</strong> Brand guide complete, social live, email capture functional.</p>
+
+<h3>2.5 Phase 3: Content & SEO (8 Feb — 21 Feb 2026)</h3>
+<p><strong>Goal:</strong> Build organic visibility through content and SEO.</p>
+<table>
+  <tr><th>Week</th><th>Tasks</th><th>Tools</th><th>Deliverables</th></tr>
+  <tr><td>5</td><td>Keyword research, content calendar, first 2 content pieces</td><td>Ubersuggest, GSC</td><td>Keywords, 2 posts live</td></tr>
+  <tr><td>6</td><td>On-page SEO, internal linking, third piece, GSC indexing check</td><td>GSC</td><td>3 posts, SEO optimised</td></tr>
+</table>
+<p><strong>Success Criteria:</strong> 3+ content pieces, keywords targeted, GSC reviewed.</p>
+
+<h3>2.6 Phase 4: Growth & Email (22 Feb — 7 Mar 2026)</h3>
+<p><strong>Goal:</strong> Drive traffic and nurture via email and optional paid.</p>
+<table>
+  <tr><th>Week</th><th>Tasks</th><th>Tools</th><th>Deliverables</th></tr>
+  <tr><td>7</td><td>First email campaign, ad account setup, ad creatives, launch paid test</td><td>Mailchimp, Ads</td><td>Campaign sent, ads live</td></tr>
+  <tr><td>8</td><td>Second email, UTM tracking, analyse ads, adjust budget</td><td>GA4, Ads</td><td>Tracking active, optimised</td></tr>
+</table>
+<p><strong>Success Criteria:</strong> Email campaigns live, paid test run, data for final phase.</p>
+
+<h3>2.7 Phase 5: Optimisation & Wrap-up (8 Mar — 18 Mar 2026)</h3>
+<p><strong>Goal:</strong> Improve conversion, finalise deliverables, complete project report.</p>
+<table>
+  <tr><th>Week</th><th>Tasks</th><th>Tools</th><th>Deliverables</th></tr>
+  <tr><td>9</td><td>Funnel analysis, A/B test (if feasible), SEO fixes</td><td>GA4, GSC</td><td>Improvements applied</td></tr>
+  <tr><td>10</td><td>Final project report, ROI calculation, documentation complete</td><td>GA4, GSC, Mailchimp</td><td>10-week report, evidence</td></tr>
+</table>
+<p><strong>Success Criteria:</strong> Conversion improvements, final report, all milestones documented.</p>
+
+<h3>2.8 Milestone Checklist (Project Evidence)</h3>
+<table>
+  <tr><th>Milestone</th><th>Target Date</th><th>Evidence</th></tr>
+  <tr><td>Live site + analytics</td><td>24 Jan 2026</td><td>Screenshot GA4, live URL</td></tr>
+  <tr><td>Brand + social</td><td>7 Feb 2026</td><td>Style guide, social links</td></tr>
+  <tr><td>Content + SEO</td><td>21 Feb 2026</td><td>Published content, GSC report</td></tr>
+  <tr><td>Email + ads test</td><td>7 Mar 2026</td><td>Mailchimp campaign, ad screenshot</td></tr>
+  <tr><td>Optimisation + report</td><td>18 Mar 2026</td><td>Final report, ROI summary</td></tr>
+</table>
+
+<h3>2.9 Risk & Contingency</h3>
+<table>
+  <tr><th>Risk</th><th>Mitigation</th></tr>
+  <tr><td>Delayed deployment</td><td>Netlify CLI manual deploy backup</td></tr>
+  <tr><td>Low paid ad performance</td><td>Pause ads, reallocate to content/SEO</td></tr>
+  <tr><td>Slow email growth</td><td>More signup CTAs, lead magnets</td></tr>
+  <tr><td>SEO slower than expected</td><td>Focus high-intent keywords, local SEO</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>APPENDIX A: Budget Tracking Template</h2>
+<table>
+  <tr><th>Date</th><th>Category</th><th>Amount (UGX)</th><th>Notes</th></tr>
+  <tr><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td></tr>
+  <tr><th colspan="2">Total</th><th></th><td></td></tr>
+</table>
+
+<h2>APPENDIX B: Tool Reference</h2>
+<table>
+  <tr><th>Tool</th><th>URL</th><th>Use</th></tr>
+  <tr><td>Netlify</td><td>netlify.com</td><td>Hosting</td></tr>
+  <tr><td>Google Analytics 4</td><td>analytics.google.com</td><td>Analytics</td></tr>
+  <tr><td>Google Search Console</td><td>search.google.com/search-console</td><td>SEO</td></tr>
+  <tr><td>Mailchimp</td><td>mailchimp.com</td><td>Email</td></tr>
+  <tr><td>Canva</td><td>canva.com</td><td>Design</td></tr>
+  <tr><td>Ubersuggest</td><td>neilpatel.com/ubersuggest</td><td>Keywords</td></tr>
+  <tr><td>Favicon.io</td><td>favicon.io</td><td>Favicon</td></tr>
+</table>
+
+<div class="footer">
+  <p><strong>Document prepared for XGIMI MoGo 4 Venture Portfolio — Digital Marketing & ICT Entrepreneurship.</strong></p>
+  <p><strong>Uganda Christian University | Group 5</strong></p>
+  <p><strong>Project Period:</strong> 10th January 2026 — 18th March 2026</p>
+</div>
+
+</body>
+</html>

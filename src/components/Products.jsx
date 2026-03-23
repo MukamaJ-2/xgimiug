@@ -46,7 +46,7 @@ const Products = () => {
                 <li>Dual 6W Harman/Kardon Speakers</li>
               </ul>
               <div className="product-action">
-                <span className="price">$499</span>
+                <span className="price">€459</span>
                 <button className="btn btn-outline">Buy Now</button>
               </div>
             </div>
@@ -68,7 +68,7 @@ const Products = () => {
                 <li>Advanced Integrated Stand</li>
               </ul>
               <div className="product-action">
-                <span className="price">$599</span>
+                <span className="price">€599</span>
                 <button className="btn btn-accent">Buy Now</button>
               </div>
             </div>

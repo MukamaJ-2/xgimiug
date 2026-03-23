@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XGIMI MoGo 4 — Core Solution Features</title>
+  <style>
+    @media print {
+      body { margin: 0; padding: 20px; }
+      h1 { page-break-after: avoid; }
+      h2 { page-break-after: avoid; }
+      h3 { page-break-after: avoid; }
+      table { page-break-inside: avoid; }
+      .feature-section { page-break-inside: avoid; }
+      .no-print { display: none !important; }
+    }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #222; max-width: 900px; margin: 0 auto; padding: 40px; }
+    h1 { color: #0a0a0c; font-size: 1.8em; border-bottom: 2px solid #6366f1; padding-bottom: 10px; margin-top: 0; }
+    h2 { color: #333; font-size: 1.4em; margin-top: 2em; }
+    h3 { color: #444; font-size: 1.15em; margin-top: 1.2em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.9em; }
+    th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; }
+    th { background: #f5f5f5; font-weight: 600; }
+    tr:nth-child(even) { background: #fafafa; }
+    ul { margin: 0.5em 0; padding-left: 1.5em; }
+    li { margin: 0.3em 0; }
+    .meta { color: #666; font-size: 0.9em; margin-bottom: 2em; }
+    .summary-table { margin-top: 2em; }
+    .page-break { page-break-before: always; }
+    .btn-print { position: fixed; top: 20px; right: 20px; background: #6366f1; color: white; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-size: 14px; box-shadow: 0 2px 8px rgba(99,102,241,0.4); }
+    .btn-print:hover { background: #4f46e5; }
+    .cover-page { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px 20px; }
+    .cover-logo { font-size: 1.2em; font-weight: bold; color: #333; margin-bottom: 4px; }
+    .cover-slogan { font-size: 0.75em; color: #666; margin-bottom: 2em; }
+    .cover-title { font-size: 1.5em; font-weight: 600; margin: 1em 0 0.5em; color: #0a0a0c; }
+    .cover-subtitle { font-size: 1em; color: #555; margin-bottom: 2em; }
+    .cover-table { max-width: 500px; margin: 2em auto; border-collapse: collapse; }
+    .cover-table th, .cover-table td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; }
+    .cover-table th { background: #f5f5f5; }
+    .cover-date { margin-top: 2em; font-size: 0.95em; }
+    .cover-ucu-logo { max-width: 300px; height: auto; margin-bottom: 1em; }
+  </style>
+</head>
+<body>
+  <button class="btn-print no-print" onclick="window.print()">📄 Save as PDF</button>
+
+  <!-- COVER PAGE (same as Budget Allocation & Implementation) -->
+  <div class="cover-page">
+    <img src="ucu-logo.png" alt="Uganda Christian University" class="cover-ucu-logo" onerror="this.style.display='none'" />
+    <!-- <div class="cover-logo">Uganda Christian University</div>
+    <div class="cover-slogan">A Centre of Excellence in the Heart of Africa</div>-->
+    <div class="cover-title">5–7 Core Solution Features</div>
+    <div class="cover-subtitle">XGIMI MoGo 4 Landing Page — Venture Portfolio</div>
+    <p><strong>Program:</strong> BSCS 3:2</p>
+    <p><strong>Course:</strong> Digital Marketing and ICT Entrepreneurship</p>
+    <p><strong>Group:</strong> Group 5</p>
+    <table class="cover-table">
+      <tr><th>S/N</th><th>Reg Number</th><th>Access Number</th><th>Name</th></tr>
+      <tr><td>1.</td><td>M23B23/025</td><td>B20722</td><td>Mucunguzi Godfrey</td></tr>
+      <tr><td>2.</td><td>S23B23/007</td><td>B24243</td><td>Ariko Ethan</td></tr>
+      <tr><td>3.</td><td>S23B23/027</td><td>B24258</td><td>Kiisa Angela</td></tr>
+      <tr><td>4.</td><td>S23B23/036</td><td>B24267</td><td>Joseph Mukama</td></tr>
+      <tr><td>5.</td><td>S23B23/086</td><td>B24775</td><td>Opifudrira Timothy</td></tr>
+    </table>
+    <div class="cover-date">
+      <p><strong>Project Period:</strong> 10th January 2026 — 18th March 2026</p>
+      <p><strong>Date Submitted:</strong> 23rd March 2026</p>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <h1>XGIMI MoGo 4 — Core Solution Features</h1>
+  <p class="meta"><strong>Comprehensive Technical &amp; Product Documentation</strong><br>
+  Document Version: 2.0 | Date: March 2026 | Product: XGIMI MoGo 4 Portable Projector<br>
+  Landing Page: https://xgimiug.netlify.app</p>
+
+  <h2>Executive Summary</h2>
+  <p>The XGIMI MoGo 4 is a compact, battery-powered portable projector featuring Google TV, 1080p Full HD resolution, and up to 5 hours of movie playback. This document provides detailed documentation of the seven core solution features as presented on the official landing page and product specifications.</p>
+
+  <div class="feature-section">
+    <h2>Feature 1: 550 ISO Lumens Brightness</h2>
+    <h3>Overview</h3>
+    <p>The MoGo 4 delivers 550 ISO Lumens of brightness, enabling clear, vivid Full HD projection on screen sizes up to 120 inches. This brightness level ensures that viewers can enjoy high-quality visuals without requiring complete darkness.</p>
+    <h3>Technical Specifications</h3>
+    <table>
+      <tr><th>Specification</th><th>Value</th></tr>
+      <tr><td>Brightness (White Light Output)</td><td>550 ISO Lumens</td></tr>
+      <tr><td>Measurement Standard</td><td>ISO 21118</td></tr>
+      <tr><td>Recommended Projection Size</td><td>60" – 120"</td></tr>
+      <tr><td>Maximum Projection Size</td><td>Up to 120"</td></tr>
+      <tr><td>Optimal Viewing</td><td>Indoors, low-light outdoors</td></tr>
+    </table>
+    <h3>Use Cases</h3>
+    <ul>
+      <li><strong>Indoor Movie Nights:</strong> Living room or bedroom projection without blackout curtains</li>
+      <li><strong>Outdoor Camping:</strong> Backyard or camping trips in dusk/twilight conditions</li>
+      <li><strong>Gaming:</strong> Responsive, bright gameplay with minimal lag</li>
+      <li><strong>Presentations:</strong> Small-group business or educational presentations</li>
+    </ul>
+    <h3>User Benefits</h3>
+    <ul>
+      <li>No need for total darkness</li>
+      <li>Clear visibility of text and fine details</li>
+      <li>Reduced eye strain compared to dimmer projectors</li>
+      <li>Consistent color and clarity across the projected image</li>
+    </ul>
+  </div>
+
+  <div class="feature-section">
+    <h2>Feature 2: 71Wh Built-in Battery</h2>
+    <h3>Overview</h3>
+    <p>The MoGo 4 includes a 71.28Wh built-in lithium-ion battery, enabling truly portable use without requiring a power outlet. Users can enjoy video playback, music streaming, or ambient lighting for extended periods.</p>
+    <h3>Technical Specifications</h3>
+    <table>
+      <tr><th>Specification</th><th>Value</th></tr>
+      <tr><td>Battery Capacity</td><td>71.28 Wh (Built-in)</td></tr>
+      <tr><td>Video Playback (Eco Mode)</td><td>Up to 2.5 hours</td></tr>
+      <tr><td>Video Playback (with PowerBase Stand)</td><td>Up to 5 hours</td></tr>
+      <tr><td>Music Playback (projector off)</td><td>Up to 6 hours</td></tr>
+      <tr><td>Power Bank Compatibility</td><td>65W–150W (PD 3.0 protocol)</td></tr>
+    </table>
+    <h3>Power Options</h3>
+    <ol>
+      <li><strong>Standalone:</strong> 2.5 hours of video on internal battery</li>
+      <li><strong>PowerBase Stand (sold separately):</strong> Extends to 5 hours of movie time</li>
+      <li><strong>65W Power Bank:</strong> Portable charging for extended outdoor use</li>
+      <li><strong>AC Adapter:</strong> Standard wall outlet charging</li>
+    </ol>
+    <h3>User Benefits</h3>
+    <ul>
+      <li>True portability—no outlet required</li>
+      <li>Flexibility to move projector anywhere</li>
+      <li>Reduced cable clutter</li>
+      <li>Extended runtime options with accessories</li>
+    </ul>
+  </div>
+
+  <div class="feature-section">
+    <h2>Feature 3: 110% BT.2020 &amp; 1000:1 Contrast</h2>
+    <h3>Overview</h3>
+    <p>The MoGo 4 supports a wide color gamut (110% BT.2020) and 1000:1 native contrast ratio, delivering cinematic color accuracy and deep blacks for a premium viewing experience.</p>
+    <h3>Technical Specifications</h3>
+    <table>
+      <tr><th>Specification</th><th>Value</th></tr>
+      <tr><td>Color Gamut</td><td>110% BT.2020</td></tr>
+      <tr><td>Contrast Ratio</td><td>1000:1 (Native)</td></tr>
+      <tr><td>Color Standard</td><td>DCI-P3 90%</td></tr>
+      <tr><td>Display Technology</td><td>DLP</td></tr>
+    </table>
+    <h3>What BT.2020 Means</h3>
+    <p>BT.2020 (Rec. 2020) is an international standard for ultra-high-definition television. Achieving 110% coverage means the projector reproduces colors beyond the standard gamut, resulting in more vibrant reds, greens, and blues.</p>
+    <h3>User Benefits</h3>
+    <ul>
+      <li>Professional-grade color accuracy</li>
+      <li>Enhanced viewing immersion</li>
+      <li>Support for HDR-compatible content</li>
+      <li>Reduced color banding and artifacts</li>
+    </ul>
+  </div>
+
+  <div class="feature-section">
+    <h2>Feature 4: Google TV Built-in</h2>
+    <h3>Overview</h3>
+    <p>The MoGo 4 runs Google TV, providing direct access to 10,000+ apps, licensed Netflix, and 800+ free channels. No external streaming device or complex setup is required—content is available out of the box.</p>
+    <h3>Technical Specifications</h3>
+    <table>
+      <tr><th>Specification</th><th>Value</th></tr>
+      <tr><td>Operating System</td><td>Google TV</td></tr>
+      <tr><td>Pre-installed Apps</td><td>Netflix (licensed), YouTube, others</td></tr>
+      <tr><td>Available Apps</td><td>10,000+</td></tr>
+      <tr><td>Free Channels</td><td>800+</td></tr>
+    </table>
+    <h3>User Benefits</h3>
+    <ul>
+      <li>No external streaming device required</li>
+      <li>Familiar Google TV interface</li>
+      <li>Voice search with Google Assistant (via remote)</li>
+      <li>Automatic updates and new app availability</li>
+    </ul>
+  </div>
+
+  <div class="feature-section">
+    <h2>Feature 5: 1080p Full HD Resolution</h2>
+    <h3>Overview</h3>
+    <p>The MoGo 4 delivers native 1920×1080 (1080p) Full HD resolution, providing sharp, detailed images suitable for movies, television, gaming, and presentations.</p>
+    <h3>Technical Specifications</h3>
+    <table>
+      <tr><th>Specification</th><th>Value</th></tr>
+      <tr><td>Native Resolution</td><td>1920 × 1080 pixels (1080p)</td></tr>
+      <tr><td>Aspect Ratio</td><td>16:9</td></tr>
+      <tr><td>Image Size Range</td><td>40" – 200"</td></tr>
+      <tr><td>Recommended Size</td><td>60" – 120"</td></tr>
+    </table>
+    <h3>User Benefits</h3>
+    <ul>
+      <li>Sharp, crisp image quality</li>
+      <li>No pixelation at recommended viewing distances</li>
+      <li>Compatibility with all standard HD content</li>
+    </ul>
+  </div>
+
+  <div class="feature-section">
+    <h2>Feature 6: Portable &amp; Limitless Play</h2>
+    <h3>Overview</h3>
+    <p>The MoGo 4 is designed for portability—compact enough to fit in a bag, with a built-in battery and versatile stand. The tagline "Limitless Play" reflects the freedom to enjoy big-screen entertainment anywhere.</p>
+    <h3>Physical Specifications</h3>
+    <table>
+      <tr><th>Specification</th><th>Value</th></tr>
+      <tr><td>Product Size (H × W × D)</td><td>207.6 × 96.5 × 96.5 mm (8.2 × 3.8 × 3.8 in)</td></tr>
+      <tr><td>Product Weight</td><td>1.31 kg (2.9 lbs)</td></tr>
+      <tr><td>Form Factor</td><td>Compact, coffee-thermos sized</td></tr>
+    </table>
+    <h3>User Benefits</h3>
+    <ul>
+      <li>Take cinema anywhere</li>
+      <li>No permanent installation</li>
+      <li>Easy setup and teardown</li>
+      <li>Minimal storage requirements</li>
+    </ul>
+  </div>
+
+  <div class="feature-section">
+    <h2>Feature 7: Magnetic Creative Filter</h2>
+    <h3>Overview</h3>
+    <p>The MoGo 4 supports Magnetic Creative Filters—snap-on lens attachments that transform the projected image into ambient lighting effects. The Sunset filter is included in the box; additional filters (Lunar, Ripple, Dreamscape) are available separately.</p>
+    <h3>Technical Details</h3>
+    <table>
+      <tr><th>Specification</th><th>Value</th></tr>
+      <tr><td>Included Filter</td><td>Sunset (1× in box)</td></tr>
+      <tr><td>Additional Filters</td><td>Lunar, Ripple, Dreamscape (sold separately)</td></tr>
+      <tr><td>Attachment</td><td>Magnetic snap-on</td></tr>
+    </table>
+    <h3>User Benefits</h3>
+    <ul>
+      <li>Instant room transformation</li>
+      <li>No additional hardware for basic effects</li>
+      <li>Easy to swap filters</li>
+      <li>Combines projector + speaker + ambient light</li>
+    </ul>
+  </div>
+
+  <h2>Summary: Core Features at a Glance</h2>
+  <table class="summary-table">
+    <tr><th>#</th><th>Feature</th><th>Key Specification</th><th>Primary Benefit</th></tr>
+    <tr><td>1</td><td>550 ISO Lumens</td><td>550 ISO Lumens brightness</td><td>Bright projection up to 120"</td></tr>
+    <tr><td>2</td><td>71Wh Built-in Battery</td><td>71.28 Wh, 2.5–5H playback</td><td>Cord-free portability</td></tr>
+    <tr><td>3</td><td>BT.2020 &amp; Contrast</td><td>110% BT.2020, 1000:1</td><td>Cinematic colors</td></tr>
+    <tr><td>4</td><td>Google TV Built-in</td><td>10k+ apps, Netflix</td><td>All-in-one streaming</td></tr>
+    <tr><td>5</td><td>1080p Resolution</td><td>1920×1080 native</td><td>Full HD clarity</td></tr>
+    <tr><td>6</td><td>Portable Design</td><td>1.31 kg, 360° stand</td><td>Limitless play anywhere</td></tr>
+    <tr><td>7</td><td>Magnetic Creative Filter</td><td>Sunset included</td><td>Ambient lighting</td></tr>
+  </table>
+
+  <p class="meta" style="margin-top: 2em;"><strong>Document Information</strong><br>
+  Prepared for: XGIMI MoGo 4 Landing Page Project<br>
+  Source: Landing page content, product specifications, XGIMI official documentation<br>
+  Last Updated: March 2026</p>
+
+  <!-- <p><em>End of Document</em></p> -->
+</body>
+</html>

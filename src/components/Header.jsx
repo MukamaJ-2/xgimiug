@@ -9,9 +9,15 @@ const Header = ({ scrolled }) => {
   return (
     <header className={`header ${scrolled ? 'glass scanned' : ''}`}>
       <div className="container header-container">
-        <div className="logo">
-          <span className="logo-text">XGIMI</span>
-        </div>
+        <a href="#overview" className="logo" aria-label="XGIMI — MoGo 4 overview">
+          <img
+            className="logo-img"
+            src="/assets/xgimi-logo.png"
+            width="803"
+            height="190"
+            alt="XGIMI"
+          />
+        </a>
 
         <nav className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <a href="#overview">Overview</a>

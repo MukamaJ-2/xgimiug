@@ -21,11 +21,20 @@
   justify-content: space-between;
 }
 
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: var(--text-primary);
+.logo {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  display: block;
+  height: clamp(26px, 5vw, 34px);
+  width: auto;
+  max-width: min(200px, 48vw);
+  object-fit: contain;
+  object-position: left center;
 }
 
 .nav-links {

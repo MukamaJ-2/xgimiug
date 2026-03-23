@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { trackBuyNowClick } from '../utils/analytics';
 import './Products.css';
 
 const Products = () => {
@@ -47,7 +48,15 @@ const Products = () => {
               </ul>
               <div className="product-action">
                 <span className="price">€459</span>
-                <button className="btn btn-outline">Buy Now</button>
+                <a
+                  href="https://eu.xgimi.com/products/mogo-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline"
+                  onClick={() => trackBuyNowClick('products_mogo4')}
+                >
+                  Buy Now
+                </a>
               </div>
             </div>
           </div>
@@ -69,7 +78,15 @@ const Products = () => {
               </ul>
               <div className="product-action">
                 <span className="price">€599</span>
-                <button className="btn btn-accent">Buy Now</button>
+                <a
+                  href="https://eu.xgimi.com/products/mogo-4-laser"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-accent"
+                  onClick={() => trackBuyNowClick('products_mogo4_pro')}
+                >
+                  Buy Now
+                </a>
               </div>
             </div>
           </div>

@@ -32,6 +32,15 @@ const Footer = () => {
                 <li><a href="#">Downloads</a></li>
               </ul>
             </div>
+
+            <div className="link-group">
+              <h3>Marketing Channels</h3>
+              <ul>
+                <li><a href="https://www.youtube.com/shorts/XbTddN8wB0k" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@xgimi256/video/7612599102332816661" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         

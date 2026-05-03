@@ -1,28 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MW7GTSGJ');</script>
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MW7GTSGJ');
+    </script>
     <!-- End Google Tag Manager -->
-    <!-- GA4 direct tracking - custom events. Get your Measurement ID: GA4 Admin > Data Streams > your web stream. Replace below. -->
+
+    <!-- GA4 Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJF637K95T"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DJF637K95T');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DJF637K95T');
     </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XGIMI MoGo 4 | Portable Google TV Projector</title>
     <meta name="description" content="Experience the latest XGIMI MoGo 4 and MoGo 4 Pro portable projectors. 1080p resolution, built-in battery, and Google TV. Limitless play anywhere." />
     <meta name="theme-color" content="#0a0a0c" />
 
-    <!-- Canonical URL - Update base URL when you have your live domain -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://xgimiug.netlify.app/" />
 
     <!-- Open Graph / Facebook -->
@@ -69,16 +73,28 @@
       }
     }
     </script>
+
+    <!-- Mailchimp -->
     <script id="mcjs">
-    !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/031d8f0dcc01b30bfa45e3768/6afc0d258e0a6a15ef19b54f1.js");
+        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/031d8f0dcc01b30bfa45e3768/6afc0d258e0a6a15ef19b54f1.js");
     </script>
-  </head>
-  <body>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4097212999016659"
+         crossorigin="anonymous"></script>
+</head>
+
+<body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW7GTSGJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW7GTSGJ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <div id="root"></div>
+
+    <!-- React App -->
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+</body>
 </html>
